@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript">
+        function clock() {
+            var hours = document.getElementById('hour');
+            var minutes = document.getElementById('minutes');
+
+            var h = new Date().getHours();
+            if (h < 10) {
+                h = '0' + new Date().getHours();
+            }
+            var m = new Date().getMinutes();
+            if (m < 10) {
+                m = '0' + new Date().getMinutes();
+            }
+
+            hours.innerHTML = h;
+            minutes.innerHTML = m;
+        }
+        var interval = setInterval(clock, 1000); 
+    </script>
+    <title>Starting Page II</title>
+</head>
+
+<body>
+    <main>
+        <video src="./styles/images/pexels-ambientnature-atmosphere-5948574.mp4" muted loop autoplay></video>
+        <h1>Have a nice Day, Aaron</h1>
+        <div class="clock">
+            <div class="time"><span id="hour">00</span></div>
+            <div class="time"><span id="minutes">00</span></div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.google.de/?hl=de" target="_blank"><i class="fa fa-google"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.netflix.com/browse" target="_blank"><i class="iconify" data-icon="cib:netflix"
+                            data-inline="false"></i></a></li>
+                <li><a href="https://studip.uni-hannover.de/dispatch.php/start?entityID=https%3A%2F%2Fstudip.uni-hannover.de%2Fshibboleth&return=https%3A%2F%2Fstudip.uni-hannover.de%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A6bc482ab8e187700437ee41b26b3fc9dd417a52fd898eccde9dc716cc58a8fa7"
+                        target="_blank"><i class="fa fa-university" aria-hidden="true"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa fa-envelope-o"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/aaronthom"  target="_blank"><i class="fa fa-github"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
